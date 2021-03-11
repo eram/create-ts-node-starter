@@ -1,0 +1,57 @@
+{
+  "name": "create-ts-node-starter",
+  "version": "1.0.0",
+  "description": "npm init for ts-node-starter",
+  "main": "./create.js",
+  "bin": {
+    "@eram/create-ts-node-starter": "./create",
+    "create-ts-node-starter": "./create"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Error: no start specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-project",
+    "ts-node-starter",
+    "ts-node",
+    "starter"
+  ],
+  "author": "eram",
+  "license": "ISC",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eram/create-ts-node-starter.git"
+  },
+  "private": "false",
+  "conf": {
+    "repo": "https://github.com/eram/ts-node-starter.git",
+    "name": "ts-node-starter",
+    "description": "Node Typescript service starter",
+    "startMsg": [
+      "-- Create project for ts-node-starter --",
+      "Please enter the following parameters for the new project package.json:"
+    ],
+    "doneMsg": [
+      "> npm run createDb",
+      "> npm run start:dev",
+      "> npm start",
+      "> code .",
+      "-- Happy hacking! --"
+    ],
+    "replaceFiles": [
+      "README.md",
+      "public/index.html",
+      "k8s/config.yaml",
+      "k8s/deploy.yaml",
+      "k8s/job_exampleJob.yaml",
+      "k8s/secrets.yaml",
+      "k8s/service.yaml"
+    ]
+  }
+}
